@@ -9,7 +9,7 @@ function About()
             </div>
             <div className="about_panel">
                 <div className="details">
-                    <div style={{display: 'flex', flexDirection: "column", gap: 15}}>
+                    <div style={{display: 'flex', flexDirection: "column", gap: 10}}>
                         <div className="about_header">
                             I am a Generalist Game Designer with over 10 years of experience building games from simple prototypes to live service experiences enjoyed by millions of players worldwide.
                         </div>

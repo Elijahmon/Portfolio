@@ -11,12 +11,14 @@ function Home() {
   return (
     <body>
         <Header />
-        <div className="sections_list">
-            <About />
-        </div>
-        <div className="section_divider" />
-        <div className="sections_list">
-            <Projects />
+          <div style={{display: 'flex', flexDirection: "column"}}>
+            <div className="sections_list">
+                <About />
+            </div>
+            <div className="section_divider" />
+            <div className="sections_list">
+                <Projects />
+            </div>
         </div>
     </body>
   );

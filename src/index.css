@@ -26,15 +26,16 @@ body {
 .sections_list
 {
   display: flex;
-  width: 100%;
-  padding: 30px 100px 0px 100px;
-  flex-direction: column;
+  width: 80%;
+  align-self: center;
+  flex-direction: row;
   align-items: center;
   gap: 150px; 
 }
 
 .section_header
 {
+  display: inline-flex;
   color: var(--Wisteria-Blue, #A3A6E1);
   text-shadow: 1px 2px 2px rgba(23, 18, 40, 0.60);
   font-size: 64px;

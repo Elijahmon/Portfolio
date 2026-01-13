@@ -17,7 +17,7 @@ header
 { 
   width: 100%;
   height: max-content;
-  display: "flex";
+  display: flex;
   flex-wrap: nowrap;  
   white-space: nowrap;    
   overflow-x: visible; 

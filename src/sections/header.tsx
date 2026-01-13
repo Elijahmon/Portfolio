@@ -1,5 +1,5 @@
 import "./header.css"
-import Divider from "../assets/Divider.svg"
+import Divider from "../assets/icons/Divider.svg"
 
 function Header()
 {
