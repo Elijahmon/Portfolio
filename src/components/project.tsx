@@ -1,21 +1,22 @@
-import React, {PropTypes, Component} from 'react'
-import "../sections/projects.css"
+import "../sections/styles/projects.css"
 
-function Project({projectSplash, projectHighlight})
+function Project({project, onOpen})
 {
-    const splashImage = use(projectSplash);
-    const highlightIamge = use(projectHighlight);
+    const { name, role, splashImage, splashPosition, highlightImage } = project;
+
     return (
         <div className="project_panel">
-            <button className="project_button" style={{backgroundImage: `url(${splashImage})`, backgroundPositionX: '100%'}} />
+            <button className="project_button" onClick={() => onOpen(project)}
+                style={{ backgroundImage: `url(${splashImage})`, backgroundPosition: `${splashPosition}` }} 
+            />
             <div className="project_details">
                 <span className="project_name">
-                    MythWalker
+                    {name}
                 </span>
                 <span className="project_info_detail">
-                    Senior Game Designer / Live Design Lead
+                    {role}
                 </span>
-                <span className="project_highlight" style={{backgroundImage: `url(${highlightIamge})`}} />
+                <span className="project_highlight" style={{ backgroundImage: `url(${highlightImage})` }} />
             </div>
         </div>
     );

@@ -4,9 +4,6 @@ import Projects from "../sections/projects"
 
 
 function Home() {
-  const handleClick = () => {
-    alert("Projects coming soon!");
-  };
 
   return (
     <body>

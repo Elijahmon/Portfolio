@@ -1,4 +1,4 @@
-import "./header.css"
+import "./styles/header.css"
 import Divider from "../assets/icons/Divider.svg"
 
 function Header()

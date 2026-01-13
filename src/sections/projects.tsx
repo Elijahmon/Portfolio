@@ -1,28 +1,36 @@
-import "./projects.css"
+import { useState } from "react";
+import { projects } from "../data/projects";
 
-import MW_Splash from "../assets/images/MW_Splash.png"
-import MW_Highlights from "../assets/images/MW_HighlightImages.png"
-
-import AS_Splash from "../assets/images/Arcane_Splash.png"
-import AS_Highlights from "../assets/images/AS_HighlightImages.png"
-
-import DOM_Splash from "../assets/images/Dom_Splash.png"
-import DOM_Highlights from "../assets/images/DOM_HighlightImages.png"
+import Project from "../components/project";
 
 
-import ESO_Splash from "../assets/images/ESO_Splash.png"
-import ESO_Highlights from "../assets/images/ESO_HighlightImages.png"
+import "./styles/projects.css"
 
-import AMAZON_Splash from "../assets/images/Amazon_Splash.png"
-
-
-import WORK_Splash from "../assets/images/Workforce_Splash.png"
 
 
 
 function Projects()
 {
+    const [activeProject, setActiveProject] = useState(null);
+
     return (
+        <div style={{alignSelf: 'stretch', width: '100%', height: 'max-content', position: 'relative', display: "flex", flexDirection: 'column'}}>
+            <div className='section_header'>
+                Projects
+            </div>
+            <div className="projects_list">
+                { projects.map((project) => 
+                    (<Project key={project.id} project={project} onOpen={setActiveProject} />)) 
+                }
+            </div>
+        </div>
+    );
+}
+
+export default Projects;
+
+/* Here lives my shame, a sketch that became a beauty.
+
         <div style={{alignSelf: 'stretch', width: '100%', height: 'max-content', position: 'relative', display: "flex", flexDirection: 'column'}}>
             <div className='section_header'>
                 Projects
@@ -102,7 +110,4 @@ function Projects()
                 </div>
             </div>
         </div>
-    );
-}
-
-export default Projects;
+        */
