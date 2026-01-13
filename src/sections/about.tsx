@@ -3,10 +3,10 @@ import "./about.css"
 function About()
 {
     return (
-        <div style={{alignSelf: 'stretch', height: 725, position: 'relative', borderRadius: 30}}>
-            <h1 style={{display:'flex', flexDirection: 'column', justifyContent: 'center'}}>
+        <div style={{alignSelf: 'stretch', height: 'max-content', position: 'relative', borderRadius: 30}}>
+            <div className='section_header'>
                 About
-            </h1>
+            </div>
             <div className="about_panel">
                 <div className="details">
                     <div style={{display: 'flex', flexDirection: "column", gap: 15}}>

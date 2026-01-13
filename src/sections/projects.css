@@ -1,0 +1,76 @@
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #171228;
+  --white: #E0E1F5;
+  --gold: #FFC933;
+  --highlight: #4EFFEF;
+  --press: #A3A6E1;
+  --BlueSlate: #56666B;
+  --M-Violet: #171228;
+  --Ebony: #596157;
+}
+
+.projects_list
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.project_panel
+{
+    height: max-content;
+    align-self: stretch;
+    display: flex;
+
+}
+
+.project_button
+{
+    width: 890px;
+    height: 500px;
+
+    border-radius: 25px;
+    border: 5px solid var(--Medium-Slate-Blue, #6F73D2);
+    background: var(--Midnight-Violet, #171228);
+    box-shadow: 4px 8px 10px 5px rgba(23, 18, 40, 0.66);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.project_details
+{
+    display: inline-flex;
+    align-self: top;
+    align-items: self-start;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.project_name
+{
+    font-size: 56px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #FFC933 60%, #B88C14 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.project_info_detail
+{
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(180deg, var(--Lavender-Mist, #F8F0FB) 62.02%, var(--Lavender, #E0E1F5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

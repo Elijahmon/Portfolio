@@ -5,7 +5,8 @@ function Header()
 {
     return (
         <header>
-                <div data-state="Inactive" style={{height: 96, left: 75, top: 32, marginRight: 200, position: 'relative', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+            <div style={{marginLeft: 75, marginBottom: 32}}>
+                <div data-state="Inactive" style={{height: 'max-content', marginTop: 32,marginRight: 165, position: 'relative', overflow: 'hidden', flexDirection: 'column', alignItems: 'flex-start', display: 'inline-flex'}}>
                     <div className="header_text" style={{fontSize: 64, textShadow: '2px 3px 2px rgba(23, 18, 40, 0.80)'}}>
                         Elijah Fernandez
                     </div>
@@ -13,7 +14,7 @@ function Header()
                         Game Designer
                     </div>
                 </div>
-                <div style={{top:"30%", position: 'relative', justifyContent: 'center', alignItems: 'center', gap: 15, display: 'inline-flex'}}>
+                <div data-state="Inactive" style={{height: 'max-content', position:'relative', top: 18, gap: 15, display: 'inline-flex', alignSelf: 'flex-end'}}>
                     <a href="" className='header_link' style={{textShadow: '2px 3px 1px rgba(23, 18, 40, 0.75)'}}>
                         About
                     </a>
@@ -33,6 +34,7 @@ function Header()
                     <a href="" className='header_link' style={{textShadow: '2px 3px 1px rgba(23, 18, 40, 0.75)'}}>
                         Blog
                     </a>
+                </div>
                 </div>
             </header>
     );

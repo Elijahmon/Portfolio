@@ -1,5 +1,6 @@
 import Header from "../sections/header"
 import About from "../sections/about"
+import Projects from "../sections/projects"
 
 
 function Home() {
@@ -12,6 +13,10 @@ function Home() {
         <Header />
         <div className="sections_list">
             <About />
+        </div>
+        <div className="section_divider" />
+        <div className="sections_list">
+            <Projects />
         </div>
     </body>
   );
