@@ -6,7 +6,7 @@ import Projects from "../sections/projects"
 function Home() {
 
   return (
-    <body>
+    <>
         <Header />
           <div style={{display: 'flex', flexDirection: "column"}}>
             <div className="sections_list">
@@ -17,7 +17,7 @@ function Home() {
                 <Projects />
             </div>
         </div>
-    </body>
+    </>
   );
 }
 

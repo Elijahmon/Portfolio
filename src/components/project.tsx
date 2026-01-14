@@ -7,9 +7,14 @@ function Project({project, onOpen})
     return (
         <div className="project_panel">
             <button className="project_button" onClick={() => onOpen(project)}
-                style={{ backgroundImage: `url(${splashImage})`, backgroundPosition: `${splashPosition}` }} 
-            />
-            <div className="project_hover_panel"/>
+                style={{ backgroundImage: `url(${splashImage})`, backgroundPosition: `${splashPosition}` }}>
+                <div className="project_hover_panel">
+                    <span className="project_skills_header">
+                        Skills, Systems, & Features
+                    </span>
+                </div>
+            </button>
+            
             <div className="project_details">
                 <span className="project_name">
                     {name}

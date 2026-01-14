@@ -1,16 +1,18 @@
 :root {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  --bg: #171228;
-  --white: #E0E1F5;
-  --gold: #FFC933;
-  --highlight: #4EFFEF;
-  --press: #A3A6E1;
-  --BlueSlate: #56666B;
-  --M-Violet: #171228;
-  --Ebony: #596157;
+    --innerglow: rgba(255, 201, 51, 0.25);
+    --blackout: rgba(23, 18, 40, 0.4);
+    --bg: #171228;
+    --white: #E0E1F5;
+    --gold: #FFC933;
+    --highlight: #4EFFEF;
+    --press: #A3A6E1;
+    --BlueSlate: #56666B;
+    --M-Violet: #171228;
+    --Ebony: #596157;
 }
 
 .projects_list
@@ -24,15 +26,19 @@
 
 .project_panel
 {
+    position: relative;
+    display: inline-flex;
     width: 100%;
     height: max-content;
     align-self: stretch;
-    display: inline-flex;
+    overflow: hidden;
 }
 
 .project_button
 {
-    min-width: 50%;
+    display: flex;
+    position: relative;
+    min-width: 45%;
     border-radius: 25px;
     border: 5px solid var(--Medium-Slate-Blue, #6F73D2);
     background: var(--Midnight-Violet, #171228);
@@ -46,17 +52,26 @@
     flex-shrink: 0.5;
 }
 
+.project_button:hover .project_hover_panel
+{
+    transform:translateY(0);
+}
+
 .project_hover_panel
 {
-    min-width: 50%;
+    box-sizing: content-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     border: 5px solid var(--gold);
-    background: var(--bg);
-    box-shadow: 4px 8px 10px 5px rgba(23, 18, 40, 0.66);
-
-    inset: 0;
+    background: var(--blackout);
+    top: -5px;
+    left: -5px;
+    backdrop-filter: blur(8px);
     transform: translateY(100%);
     transition: transform 250ms ease;
+    box-shadow: -5px -5px 10px 5px var(--innerglow) inset, 5px 5px 10px 5px var(--innerglow) inset, 4px 8px 10px 5px var(--blackout);
 }
 
 .project_highlight
@@ -97,6 +112,18 @@
     font-size: 30px;
     font-weight: 700;
     background: linear-gradient(180deg, var(--Lavender-Mist, #F8F0FB) 62.02%, var(--Lavender, #E0E1F5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project_skills_header
+{
+    font-size: 36px;
+    font-weight: 700;
+    stroke-width: 2px;
+    stroke: rgba(31, 57, 97, 1);
+    background: linear-gradient(180deg, var(--Lavender-Mist, #F8F0FB) 40%, var(--Lavender, #E0E1F5) 90%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
