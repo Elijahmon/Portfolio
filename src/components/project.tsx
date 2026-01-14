@@ -9,6 +9,7 @@ function Project({project, onOpen})
             <button className="project_button" onClick={() => onOpen(project)}
                 style={{ backgroundImage: `url(${splashImage})`, backgroundPosition: `${splashPosition}` }} 
             />
+            <div className="project_hover_panel"/>
             <div className="project_details">
                 <span className="project_name">
                     {name}

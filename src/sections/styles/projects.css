@@ -46,6 +46,19 @@
     flex-shrink: 0.5;
 }
 
+.project_hover_panel
+{
+    min-width: 50%;
+    border-radius: 25px;
+    border: 5px solid var(--gold);
+    background: var(--bg);
+    box-shadow: 4px 8px 10px 5px rgba(23, 18, 40, 0.66);
+
+    inset: 0;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
 .project_highlight
 {
     width: 100%;
