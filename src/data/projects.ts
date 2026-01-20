@@ -21,6 +21,11 @@ export const projects = [
         name: "Mythwalker",
         role: "Senior Game Designer / Live Design Lead",
 
+        released: "November 2024",
+        studio: "NantGames",
+        genre: "Geolocation MMORPG",
+        platforms: "Android & iOS",
+
         /* assets */
         splashImage: MW_Splash,
         splashPosition: "100% 50%",
@@ -32,6 +37,11 @@ export const projects = [
         name: "Unrealeased Project",
         role: "Systems & Technical Game Designer",
 
+        released: "",
+        studio: "Big Huge Games",
+        genre: "Strategy (PvP)",
+        platforms: "Android, iOS & Steam",
+
         /* assets */
         splashImage: UNR_Splash,
         splashPosition: "",
@@ -41,6 +51,11 @@ export const projects = [
         id: "arcane",
         name: "Arcane Showdown",
         role: "Systems & Technical Game Designer",
+
+        released: "September 2020",
+        studio: "Big Huge Games",
+        genre: "Card / Strategy (PvP)",
+        platforms: "Android, iOS & Steam",
 
         /* assets */
         splashImage: AS_Splash,
@@ -52,6 +67,11 @@ export const projects = [
         name: "DomiNations",
         role: "Live Game Designer",
 
+        released: "April 2015",
+        studio: "Big Huge Games",
+        genre: "Strategy Base Builder (PvP)",
+        platforms: "Android, iOS & Steam",
+
         /* assets */
         splashImage: DOM_Splash,
         splashPosition: "",
@@ -61,6 +81,11 @@ export const projects = [
         id: "eso",
         name: "Elder Scrolls Online",
         role: "QA Tester / Automation Engineer",
+
+        released: "April 2014",
+        studio: "Zenimax Online Studios",
+        genre: "MMORPG",
+        platforms: "PC, Max, Xbox, & PlayStation",
 
         /* assets */
         splashImage: ESO_Splash,
@@ -72,6 +97,11 @@ export const projects = [
         name: "Amazon Experience",
         role: "Game Developer",
 
+        released: "August 2015",
+        studio: "Alchemy Learning",
+        genre: "Educational VR Experience",
+        platforms: "PC",
+
         /* assets */
         splashImage: Amazon_Splash,
         splashPosition: "",
@@ -81,6 +111,11 @@ export const projects = [
         id: "workforce", /* :( */
         name: "Workforce Development",
         role: "Game Developer",
+
+        released: "December 2015",
+        studio: "Alchemy Learning",
+        genre: "Workforce VR Experience",
+        platforms: "Android, iOS, GearVR",
 
         /* assets */
         splashImage: Workforce_Splash,
