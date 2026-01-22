@@ -1,19 +1,28 @@
+
 import "../sections/styles/projects.css"
 
 import Project_Detail from "../components/project_detail";
+import TimeIcon from "../assets/icons/TimeIcon.svg"
 
 function Project({project, onOpen})
 {
-    const { name, role, splashImage, splashPosition, highlightImage, released, studio, genre, platforms } = project;
+    const { name, role, splashImage, splashPosition, highlightImage, released, studio, genre, platforms, duration, summary } = project;
 
+    console.log(`url${TimeIcon})`);
     return (
         <div className="project_panel">
             <button className="project_button" onClick={() => onOpen(project)}
                 style={{ backgroundImage: `url(${splashImage})`, backgroundPosition: `${splashPosition}` }}>
                 <div className="project_hover_panel">
-                    <div className="project_skills_header">
-                        Skills, Systems, & Features
+                    <div className="project_duration_panel" style={{ margin: '24px 24px 5px 24px'}}>
+                        <img src={TimeIcon} style={{padding: '5px 0px 5px 20px'}}/>
+                        <span style={{justifyContent: 'center', padding: '5px 5px 5px 5px'}}> {duration} </span>
+                        <button className="project_detail_button" style={{width: '200px', height: '60px', 
+                            padding: '5px 20px 5px 20px', alignSelf: 'center', margin: '0px 10px 0px 20px', fontSize: '40px'}}>
+                            Website
+                        </button>
                     </div>
+                    <div className="project_detail_text">{summary}</div>
                 </div>
             </button>
             

@@ -20,6 +20,8 @@ export const projects = [
         id: "mythwalker",
         name: "Mythwalker",
         role: "Senior Game Designer / Live Design Lead",
+        duration: "5 Years",
+        summary: 'MythWalker is a Mobile Geo-Location MMORPG. Players explore the globe using their real location and portals, fighting monsters, collecting materials, and completing quests to help save Mytherra from the Dragon Invasion. ',
 
         released: "November 2024",
         studio: "NantGames",
@@ -36,6 +38,7 @@ export const projects = [
         id: "fufa", /* :( */
         name: "Unrealeased Project",
         role: "Systems & Technical Game Designer",
+        duration: "16 Months",
 
         released: "",
         studio: "Big Huge Games",
@@ -51,6 +54,7 @@ export const projects = [
         id: "arcane",
         name: "Arcane Showdown",
         role: "Systems & Technical Game Designer",
+        duration: "3 Years",
 
         released: "September 2020",
         studio: "Big Huge Games",
@@ -66,6 +70,7 @@ export const projects = [
         id: "dominations",
         name: "DomiNations",
         role: "Live Game Designer",
+        duration: "1 Year",
 
         released: "April 2015",
         studio: "Big Huge Games",
@@ -81,6 +86,7 @@ export const projects = [
         id: "eso",
         name: "Elder Scrolls Online",
         role: "QA Tester / Automation Engineer",
+        duration: "14 Months",
 
         released: "April 2014",
         studio: "Zenimax Online Studios",
@@ -96,6 +102,8 @@ export const projects = [
         id: "amazon", /* :( */
         name: "Amazon Experience",
         role: "Game Developer",
+        duration: "8 Months",
+
 
         released: "August 2015",
         studio: "Alchemy Learning",
@@ -111,6 +119,8 @@ export const projects = [
         id: "workforce", /* :( */
         name: "Workforce Development",
         role: "Game Developer",
+        duration: "6 Months",
+
 
         released: "December 2015",
         studio: "Alchemy Learning",
