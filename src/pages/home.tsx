@@ -1,10 +1,15 @@
+import { useState } from "react";
+
 import Header from "../sections/header"
 import About from "../sections/about"
 import Projects from "../sections/projects"
+import Project_Overlay from "../components/project_overlay";
 
 
 function Home() {
 
+  const [activeProject, setActiveProject] = useState(null);
+  
   return (
     <>
         <Header />
@@ -14,9 +19,12 @@ function Home() {
             </div>
             <div className="section_divider" />
             <div className="sections_list">
-                <Projects />
+                <Projects onOpenOverlay={setActiveProject}/>
             </div>
         </div>
+        {activeProject && (
+          <Project_Overlay project={activeProject} />
+        )}
     </>
   );
 }

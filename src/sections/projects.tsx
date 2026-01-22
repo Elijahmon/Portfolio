@@ -9,18 +9,18 @@ import "./styles/projects.css"
 
 
 
-function Projects()
+function Projects({onOpenOverlay})
 {
-    const [activeProject, setActiveProject] = useState(null);
-
+    console.log(onOpenOverlay);
     return (
         <div style={{alignSelf: 'stretch', width: '100%', height: 'max-content', position: 'relative', display: "flex", flexDirection: 'column'}}>
             <div className='section_header'>
                 Projects
             </div>
             <div className="projects_list">
-                { projects.map((project) => 
-                    (<Project key={project.id} project={project} onOpen={setActiveProject} />)) 
+                { 
+                    projects.map((project) => 
+                    (<Project key={project.id} project={project} onOpen={onOpenOverlay} />)) 
                 }
             </div>
         </div>

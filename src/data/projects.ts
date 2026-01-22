@@ -15,6 +15,8 @@ import ESO_Highlights from "../assets/images/ESO_HighlightImages.png"
 import Amazon_Highlights from "../assets/images/Amazon_HighlightImages.png"
 import Workforce_Highlights from "../assets/images/Workforce_HighlightImages.png"
 
+import MW_Overlay from "../assets/images/MW_OverlayImg.png"
+
 export const projects = [
     {
         id: "mythwalker",
@@ -23,16 +25,23 @@ export const projects = [
         duration: "5 Years",
         summary: 'MythWalker is a Mobile Geo-Location MMORPG. Players explore the globe using their real location and portals, fighting monsters, collecting materials, and completing quests to help save Mytherra from the Dragon Invasion. ',
 
-        released: "November 2024",
+        releaseMonth: "November",
+        releaseYear: "2024",
         studio: "NantGames",
         genre: "Geolocation MMORPG",
         platforms: "Android & iOS",
+
+        toolTags: ["Unity", "C#", "Git", "Excel", "Tableau", "JIRA"],
+        skillTags: ["Progression", "Economy", "Monetization", "Geolocation", "Combat", "Crafting", "Quests", "Social", "Live Ops", "UI/UX", "Prototyping", "Analytics"],
+
 
         /* assets */
         splashImage: MW_Splash,
         splashPosition: "100% 50%",
 
         highlightImage: MW_Highlights,
+
+        overlayImage: MW_Overlay,
     },
     {
         id: "fufa", /* :( */
@@ -40,7 +49,8 @@ export const projects = [
         role: "Systems & Technical Game Designer",
         duration: "16 Months",
 
-        released: "",
+        releaseMonth: "",
+        releaseYear: "",
         studio: "Big Huge Games",
         genre: "Strategy (PvP)",
         platforms: "Android, iOS & Steam",
@@ -56,7 +66,8 @@ export const projects = [
         role: "Systems & Technical Game Designer",
         duration: "3 Years",
 
-        released: "September 2020",
+        releaseMonth: "September",
+        releaseYear: "2020",
         studio: "Big Huge Games",
         genre: "Card / Strategy (PvP)",
         platforms: "Android, iOS & Steam",
@@ -72,7 +83,8 @@ export const projects = [
         role: "Live Game Designer",
         duration: "1 Year",
 
-        released: "April 2015",
+        releaseMonth: "April",
+        releaseYear: "2015",
         studio: "Big Huge Games",
         genre: "Strategy Base Builder (PvP)",
         platforms: "Android, iOS & Steam",
@@ -88,7 +100,8 @@ export const projects = [
         role: "QA Tester / Automation Engineer",
         duration: "14 Months",
 
-        released: "April 2014",
+        releaseMonth: "April",
+        releaseYear: "2014",
         studio: "Zenimax Online Studios",
         genre: "MMORPG",
         platforms: "PC, Max, Xbox, & PlayStation",
@@ -105,11 +118,12 @@ export const projects = [
         duration: "8 Months",
 
 
-        released: "August 2015",
+        releaseMonth: "July",
+        releaseYear: "2014",
         studio: "Alchemy Learning",
         genre: "Educational VR Experience",
         platforms: "PC",
-
+     
         /* assets */
         splashImage: Amazon_Splash,
         splashPosition: "",
@@ -122,7 +136,8 @@ export const projects = [
         duration: "6 Months",
 
 
-        released: "December 2015",
+        releaseMonth: "December",
+        releaseYear: "2014",
         studio: "Alchemy Learning",
         genre: "Workforce VR Experience",
         platforms: "Android, iOS, GearVR",
