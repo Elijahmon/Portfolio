@@ -26,7 +26,7 @@ function Project_Highlight({highlight})
                     {description}
                 </div>
             </div>
-            <div className="section_divider" style={{margin: '30px 0 30px 0', padding: '0', position: 'relative', left: '-8%'}}/>
+            <div className="section_divider" style={{margin: '30px 0 30px 0', padding: '0', width: '100%', opacity: '0.33'}}/>
         </div>
     );
 }

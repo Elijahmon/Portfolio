@@ -13,6 +13,8 @@
     --BlueSlate: #56666B;
     --M-Violet: #171228;
     --Ebony: #596157;
+
+    --OverlayContent: rgba(111, 115, 210, 0.33);
 }
 
 .projects_list
@@ -291,18 +293,36 @@
 
 .project_overlay_panel
 {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     inset: 0;
     display: block;
     position: fixed;
 
-    padding: 8% 16% 0 6%; 
+    /*padding: 8% 16% 0 6%;*/
+    padding: 6% 10% 0 4%;
     background: var(--blackout);
     backdrop-filter: blur(8px);
 
+    overflow-x: hidden;
     overflow-y: auto;
     margin-bottom: 10px;
+}
+
+.project_overlay_content
+{
+    width: 105%;
+    height: max-content;
+    
+    padding: 3% 3% 0 3%;
+    background: var(--OverlayContent);
+    border: 20px outset var(--OverlayContent);
+    border-radius: 15px;
+    filter: blur(8);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    /* box-shadow: 4px 4px 6px 0 var(--OverlayContent);*/
 }
 
 .project_release
