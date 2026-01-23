@@ -16,6 +16,7 @@ import Amazon_Highlights from "../assets/images/Amazon_HighlightImages.png"
 import Workforce_Highlights from "../assets/images/Workforce_HighlightImages.png"
 
 import MW_Overlay from "../assets/images/MW_OverlayImg.png"
+//import MW_Highlight1 from "../assets/images/MW_Highlgiht1.png"
 
 export const projects = [
     {
@@ -34,6 +35,22 @@ export const projects = [
         toolTags: ["Unity", "C#", "Git", "Excel", "Tableau", "JIRA"],
         skillTags: ["Progression", "Economy", "Monetization", "Geolocation", "Combat", "Crafting", "Quests", "Social", "Live Ops", "UI/UX", "Prototyping", "Analytics"],
 
+        highlights: [
+            {
+                title: "Geolocation Design",
+                toolTags: ["Unity", 'C#'],
+                skillTags: ["Geolocation"],
+                
+                description: "Details about this highlight go here, include some videos, inline images, etc.  Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc. Details about this highlight go here, include some videos, inline images, etc.",
+
+                highlightImage: MW_Overlay,
+            },
+            {
+                title: "Highlight 2",
+                toolTags: ["Unity", "C#"],
+                skillTags: ["Progression"],
+            },
+        ],
 
         /* assets */
         splashImage: MW_Splash,

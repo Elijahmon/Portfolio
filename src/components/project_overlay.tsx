@@ -1,15 +1,16 @@
 import "../sections/styles/projects.css"
 import Project_Tag_Grid from "./project_tag_grid";
+import Project_Highlight from "./project_highlight";
 
 function Project_Overlay({project})
 {
     const { id, name, role, splashImage, splashPosition, highlightImage, releaseMonth, releaseYear, 
-        studio, genre, platforms, duration, summary, toolTags, skillTags, overlayImage } = project;
+        studio, genre, platforms, duration, summary, toolTags, skillTags, overlayImage, highlights } = project;
 
     return (
         <div className="project_overlay_panel" style={{}}>
-            <div style={{width: '100%', display: 'flex', flexDirection: 'row'}}>
-                <div style={{width: '70%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+            <div style={{display: 'inline-flex', flexDirection: 'row'}}>
+                <div style={{maxWidth: '70%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
                     <div style={{ display: 'inline-flex', flexDirection: 'row', gap: '35px'}}>
                         <div className="project_name" style={{fontSize: '96px', padding: '0'}}>
                         {name}
@@ -41,7 +42,13 @@ function Project_Overlay({project})
                     Project Highlights
                 </div>
             </div>
-            <div className="section_divider" style={{margin: '15px 0 15px 0', padding: '0'}}/>
+            <div className="section_divider" style={{margin: '15px 0 15px 0', padding: '0', position: 'relative', left: '-8%'}}/>
+            <div style={{width: '100%', display: 'inline-flex', flexDirection: 'column'}}>
+                { 
+                    highlights.map((highlight) => 
+                    (<Project_Highlight key={highlight.title} highlight={highlight} />)) 
+                }
+            </div>
         </div>
     );
 }

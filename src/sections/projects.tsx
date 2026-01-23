@@ -11,7 +11,7 @@ import "./styles/projects.css"
 
 function Projects({onOpenOverlay})
 {
-    console.log(onOpenOverlay);
+
     return (
         <div style={{alignSelf: 'stretch', width: '100%', height: 'max-content', position: 'relative', display: "flex", flexDirection: 'column'}}>
             <div className='section_header'>
