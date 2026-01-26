@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import "../sections/styles/projects.css"
 
@@ -13,16 +13,26 @@ function Project_Overlay({project, onCloseOverlay})
         studio, genre, platforms, duration, summary, toolTags, skillTags, overlayImage, highlights } = project;
 
     const overlayRef = useRef(null);
+    const [visible, setVisible] = useState(false);
 
-    // Close Overlay Function
-    const CloseOverlay = () => {
-        onCloseOverlay(null);
+    const onClose = () => {
+        setVisible(false);
+
+        setTimeout(() => {
+            onCloseOverlay();
+        }, 500);
     };
-    useOnClickOutside(overlayRef, CloseOverlay);
+
+    useEffect(() => {
+        requestAnimationFrame(() => setVisible(true));
+    }, [project]);
+
+    
+    useOnClickOutside(overlayRef, onCloseOverlay);
 
     return (
-        <div className="project_overlay_panel" style={{}}>
-            <div className='project_overlay_content' ref={overlayRef} style={{}}>
+        <div className={`project_overlay_panel ${visible ? 'show' : ''}`} style={{}}>
+            <div className={`project_overlay_content ${visible ? 'show' : ''}`} ref={overlayRef} style={{}}>
                 <div style={{display: 'inline-flex', flexDirection: 'row'}}>
                     <div style={{maxWidth: '70%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
                         <div style={{ display: 'inline-flex', flexDirection: 'row', gap: '35px'}}>
@@ -63,12 +73,13 @@ function Project_Overlay({project, onCloseOverlay})
                         (<Project_Highlight key={highlight.title} highlight={highlight} />)) 
                     }
                 </div>
-            </div>
-            <div style={{display: 'inline-flex', flexDirection: 'column', width: '100%', height: '200px'}}>
-                    <button className="project_detail_button" style={{width: '125px', height: '125px', alignSelf: 'center', fontSize:'62px', borderRadius: '125px'}}>
-                        X
+                <div style={{display: 'inline-flex', flexDirection: 'column', justifyContent: "center", width: '100%', height: 'max-content', padding: '30px 5px 50px'}}>
+                    <button onClick={onClose} className="project_detail_button" style={{width: '200px', height: '80px', alignSelf: 'center', fontSize:'48px', borderRadius: '100px'}}>
+                        Close
                     </button>
+                </div>
             </div>
+            
         </div>
     );
 }

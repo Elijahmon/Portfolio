@@ -7,9 +7,9 @@ function useOnClickOutside(ref, handler) {
   useEffect(() => {
     function handleClickOutside(event) {
       // Check if the click is outside the ref element
-      console.log('click');
+      //console.log('click');
       if (ref.current && !ref.current.contains(event.target)) {
-        console.log('click outside');
+        //console.log('click outside');
         handler(event);
       }
     }

@@ -3,8 +3,8 @@ import "./styles/about.css"
 function About()
 {
     return (
-        <div style={{alignSelf: 'stretch', height: 'max-content', position: 'relative', borderRadius: 30}}>
-            <div className='section_header'>
+        <div id="About" style={{alignSelf: 'stretch', height: 'max-content', position: 'relative', borderRadius: 30}}>
+            <div  className='section_header'>
                 About
             </div>
             <div className="about_panel">
