@@ -27,8 +27,11 @@ function Project_Overlay({project, onCloseOverlay})
         requestAnimationFrame(() => setVisible(true));
     }, [project]);
 
-    
-    useOnClickOutside(overlayRef, onCloseOverlay);
+    if(project)
+    {
+        useOnClickOutside(overlayRef, onClose);
+    }
+
 
     return (
         <div className={`project_overlay_panel ${visible ? 'show' : ''}`} style={{}}>
