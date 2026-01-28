@@ -5,6 +5,7 @@ import About from "../sections/about"
 import Projects from "../sections/projects"
 import Project_Overlay from "../components/project_overlay";
 import Resume from "../sections/resume";
+import Contact from "../sections/contact";
 
 import useOnClickOutside from '../components/click_outside_handler'; 
 
@@ -30,6 +31,10 @@ function Home() {
             <div id="Resume"  className="section_divider" style={{margin: '100px 0 100px 0'}} />
             <div className="sections_list" >
                 <Resume />
+            </div>
+            <div id="Contact"  className="section_divider" style={{margin: '100px 0 100px 0'}} />
+            <div className="sections_list" >
+              <Contact />
             </div>
         </div>
         {activeProject && (
