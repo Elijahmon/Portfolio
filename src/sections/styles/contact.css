@@ -1,0 +1,115 @@
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #171228;
+  --white: #E0E1F5;
+  --gold: #FFC933;
+  --highlight: #4EFFEF;
+  --press: #A3A6E1;
+  --BlueSlate: #56666B;
+  --M-Violet: #171228;
+  --Ebony: #596157;
+  --Shadow: #12143A;
+
+  font-family: Montserrat;
+
+  --button_blue: rgb(86, 102, 107, 0.66);
+  --button_violet: rgb(125, 97, 216, 0.66);
+  --button_grey:  rgb(62, 59, 72, 0.66);
+  --button_slate: rgb(86, 102, 107, 0.66);
+
+  
+}
+
+.contact_h1
+{
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+
+    color: var(--Lavender-Mist, #F8F0FB);
+    text-align: center;
+    text-shadow: 2px 2px 1px var(--Midnight-Violet, #171228);
+    font-size: 26px;
+    font-weight: 800;
+    padding: 40px 0 20px 0;
+}
+
+.contact_button
+{
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    height: 125px;
+
+    gap: 5px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 2px solid var(--Lavender-Mist, #F8F0FB);
+    background-image: linear-gradient(180deg, var(--button_blue) 60%, var(--button_grey) 100%);
+    /*background: linear-gradient(180deg, var(--Blue-Slate, #56666B) 60%, var(--Blue-Ebony, #3E3B48) 100%);*/
+    box-shadow: 2px 4px 8px 0 rgba(255, 255, 255, 0.40) inset;
+
+    transition:
+        border-radius 300ms cubic-bezier(0.645, 0.045, 0.355, 1), 
+        border 300ms ease,
+        background-image 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
+        box-shadow 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.contact_button:hover
+{
+    border-radius: 10px;
+    border: 2px solid var(--NeonIce, #4EFFEF);
+    background-image: linear-gradient(180deg, var(--button_blue) 60%, var(--button_violet) 100%);
+    /*background: linear-gradient(180deg, var(--Medium-Slate-Blue, #6F73D2) 60%, var(--Non-Midnight-Violet, #7D61D8) 100%);*/
+    box-shadow: 2px 4px 8px 0 rgba(255, 255, 255, 0.60) inset,
+                -3px -3px 5px 0 rgba(78, 255, 239, 0.33), 
+                3px 3px 2px 0 rgba(78, 255, 239, 0.33);
+}
+
+.contact_button:active
+{
+    border: 2px solid #B9A8F0;
+    background-image: linear-gradient(180deg, var(--button_slate) 60%, var(--button_violet) 100%);
+    /*background: linear-gradient(180deg, var(--Blue-Slate, #56666B) 60%, var(--Non-Midnight-Violet, #7D61D8) 100%);*/
+    box-shadow: 4px -4px 2px 0 rgba(0, 0, 0, 0.50) inset, 
+                -4px 4px 2px 0 rgba(0, 0, 0, 0.50) inset, 
+                -4px -4px 2px 0 rgba(0, 0, 0, 0.50) inset, 
+                4px 4px 2px 0 rgba(0, 0, 0, 0.50) inset;
+}
+
+.contact_icon
+{
+    display: flex;
+    
+    align-self: center;
+    justify-content: center;
+
+    height: 108px;
+    width: 108px;
+
+    opacity: 1;
+
+    transition:
+        height 300ms cubic-bezier(0.19, 1, 0.22, 1),
+        width 300ms cubic-bezier(0.19, 1, 0.22, 1),
+        opacity 300ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.contact_button:active .contact_icon 
+{
+    height: 100px;
+    width: 100px;
+
+    opacity: 0.66;
+}

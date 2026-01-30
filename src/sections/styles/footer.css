@@ -1,0 +1,45 @@
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #171228;
+  --white: #E0E1F5;
+  --off-white: #F8F0FB;
+  --gold: #FFC933;
+  --highlight: #4EFFEF;
+  --press: #A3A6E1;
+  --BlueSlate: #56666B;
+  --M-Violet: #171228;
+  --Ebony: #596157;
+  --Shadow: #12143A;
+
+  font-family: Montserrat;
+
+  --button_blue: rgb(86, 102, 107, 0.66);
+  --button_violet: rgb(125, 97, 216, 0.66);
+  --button_grey:  rgb(62, 59, 72, 0.66);
+  --button_slate: rgb(86, 102, 107, 0.66);
+
+  
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--Evening-Blue, #1F3961);
+    
+    gap: 10px;
+    flex-shrink: 0;
+
+    color: var(--off-white);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}

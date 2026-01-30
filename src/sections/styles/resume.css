@@ -57,6 +57,17 @@
     text-decoration: underline;   
 }
 
+.resume_p
+{
+    color: var(--M-Violet);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 10px 0; 
+}
+
+
 .download_button
 {
     display: inline-flex;

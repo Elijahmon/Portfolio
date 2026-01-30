@@ -1,11 +1,12 @@
 import { useState, useRef } from "react";
 
-import Header from "../components/header"
+import Header from "../sections/header"
 import About from "../sections/about"
 import Projects from "../sections/projects"
 import Project_Overlay from "../components/project_overlay";
 import Resume from "../sections/resume";
 import Contact from "../sections/contact";
+import Footer from "../sections/footer";
 
 import useOnClickOutside from '../components/click_outside_handler'; 
 
@@ -37,6 +38,7 @@ function Home() {
               <Contact />
             </div>
         </div>
+      <Footer />
         {activeProject && (
           <Project_Overlay project={activeProject} onCloseOverlay={CloseOverlay} />
         )}
