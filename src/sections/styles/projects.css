@@ -282,7 +282,7 @@
 {
     align-self: stretch;
     text-align: left;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     background: linear-gradient(180deg, var(--Lavender-Mist, #F8F0FB) 62.02%, var(--Lavender, #E0E1F5) 100%);
     background-clip: text;
@@ -420,12 +420,12 @@
     text-align: left;
 
     font-family: "Jersey 25";
-    font-size: 48px;
+    font-size: 52px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
-    background: linear-gradient(180deg, var(--Lavender-Mist, #F8F0FB) 60%, var(--Lavender, #E0E1F5) 100%);
+    background: linear-gradient(180deg, #FFC933 60%, #B88C14 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -434,13 +434,13 @@
 .project_highlight_body
 {
     width: 100%;
-
-    display: inline-block;
+    margin: 15px;
     text-overflow: wrap;
+    white-space: pre-line;
 
     height: max-content;
 
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 
     background: linear-gradient(180deg, var(--Lavender-Mist, #F8F0FB) 60%, var(--Lavender, #E0E1F5) 100%);
@@ -448,4 +448,24 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.project_highlight_image
+{
+    position: relative;
+    align-self: flex-start;
+    max-width: 25%;
+    height: auto;
+    flex-shrink: 0.2;
+    object-fit: contain;
+}
+
+.project_sub_image
+{
+    display: inline;
+    white-space: nowrap;
+    margin: 10px 10px;
+    width: auto;
+    max-height: 250px;
+    flex-shrink: 0.5;
 }

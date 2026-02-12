@@ -24,8 +24,8 @@ function Header({project})
 
     return (
         <header id="Header" className = {`header ${isCompact || overlayOpen ? "compact" : ""}`}>
-            <div style={{height: '100%', marginLeft: '75', display: 'inline-flex', flexDirection: 'row'}}>
-                <div style={{height: '100%', marginRight: 165, overflow: 'hidden', flexDirection: 'column', alignItems: 'block-start', display: 'inline-block'}}>
+            <div style={{height: '100%', marginLeft: '75px', display: 'inline-flex', flexDirection: 'row'}}>
+                <div style={{height: '100%', marginRight: '165px', overflow: 'hidden', flexDirection: 'column', alignItems: 'block-start', display: 'inline-block'}}>
                     <div className={`header_name ${isCompact || overlayOpen  ? "compact" : ""}`} style={{}}>
                         Elijah Fernandez
                     </div>

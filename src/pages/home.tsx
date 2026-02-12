@@ -25,15 +25,15 @@ function Home() {
             <div className="sections_list">
                 <About />
             </div>
-            <div id="Projects"  className="section_divider" style={{margin: '100px 0 100px 0'}} />
+            <div id="Projects"  className="section_divider" style={{margin: '100px 0 50px 0'}} />
             <div className="sections_list" >
                 <Projects onOpenOverlay={setActiveProject}/>
             </div>
-            <div id="Resume"  className="section_divider" style={{margin: '100px 0 100px 0'}} />
+            <div id="Resume"  className="section_divider" style={{margin: '100px 0 50px 0'}} />
             <div className="sections_list" >
                 <Resume />
             </div>
-            <div id="Contact"  className="section_divider" style={{margin: '100px 0 100px 0'}} />
+            <div id="Contact"  className="section_divider" style={{margin: '100px 0 50px 0'}} />
             <div className="sections_list" >
               <Contact />
             </div>

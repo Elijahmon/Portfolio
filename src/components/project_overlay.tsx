@@ -65,7 +65,7 @@ function Project_Overlay({project, onCloseOverlay})
                     <img src={overlayImage} style={{maxWidth: '30%', maxHeight: '450px'}} />
                 </div>
                 <div>
-                    <div className="project_name" style={{display: 'block', width: '100%', fontSize: '48px', textAlign: 'center', padding: '15px 0 15px 0'}}>
+                    <div className="project_detail_text" style={{display: 'block', width: '100%', fontSize: '48px', textAlign: 'center', padding: '15px 0 15px 0'}}>
                         Project Highlights
                     </div>
                 </div>

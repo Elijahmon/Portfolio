@@ -188,6 +188,15 @@ function Resume()
                             Support web team developing automated tests in Ruby for purchasing through ESO web storefront.
                         </li>
                     </div>
+                    <div className="resume_h1" style={{padding: '25px 0 0 0'}}>Volunteer Work</div>
+                    <div className="resume_exp" style={{padding: '0px 10% 5px 6%'}}>
+                        <li>
+                            Baltimore Animal Rescue and Care Shelter - Videography and Editing
+                        </li>
+                        <li>
+                            Code in the Schools - Mentoring
+                        </li>
+                    </div>
                 </div>
                 )}
             </div>  
