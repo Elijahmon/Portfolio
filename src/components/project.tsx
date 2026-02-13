@@ -7,7 +7,7 @@ import TimeIcon from "../assets/icons/TimeIcon.svg"
 
 function Project({project, onOpen})
 {
-    const { id, name, role, splashImage, splashPosition, highlightImage, releaseMonth, releaseYear, studio, genre, platforms, duration, summary } = project;
+    const { id, name, role, splashImage, splashPosition, highlightImage, releaseMonth, releaseYear, studio, genre, platforms, duration, summary, website } = project;
 
     return (
         <div className="project_panel">
@@ -17,10 +17,12 @@ function Project({project, onOpen})
                     <div className="project_duration_panel" style={{ margin: '24px 0px 0px 24px'}}>
                         <img src={TimeIcon} style={{margin: '5px 0px 5px 20px', maxHeight: '100%', alignSelf: "center"}}/>
                         <span style={{justifyContent: 'center', padding: '5px 5px 5px 10px', width: 'max-content', textWrapMode: 'nowrap'}}> {duration} </span>
-                        <button className="project_detail_button" style={{minWidth: '200px', maxHeight: '80%', 
-                            padding: '5px 20px 5px 20px', alignSelf: 'center', margin: '0px 10px 0px 20px', fontSize: '40px'}}>
-                            Website
-                        </button>
+                        {website.length > 0 && (
+                            <a href={website} target="_blank" className="project_detail_button" style={{minWidth: '200px', maxHeight: '80%', 
+                            padding: '5px 20px 5px 20px', alignSelf: 'center', margin: '0px 10px 0px 20px', fontSize: '40px', textDecoration: 'none'}}>
+                                Website
+                            </a>
+                        )}
                     </div>
                     <div className="project_summary" style={{margin: '24px 24px'}}>{summary}</div>
                     <button onClick={() => onOpen(project)} className="project_detail_button" style={{minWidth: '180px', maxHeight: '80%', 

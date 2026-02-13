@@ -70,6 +70,7 @@ export const projects = [
         studio: "NantGames",
         genre: "Geolocation MMORPG",
         platforms: "Android & iOS",
+        website: "https://mythwalker.com/",
 
         toolTags: ["Unity", "C#", "Git", "Excel", "Tableau", "JIRA", "Machinations"],
         skillTags: ["Progression", "Economy", "Monetization", "Geolocation", "Combat", "Crafting", "Quests", "Social", "Live Ops", "UI/UX", "Prototyping", "Analytics"],
@@ -134,6 +135,7 @@ export const projects = [
         studio: "Big Huge Games",
         genre: "Strategy (PvP)",
         platforms: "Android, iOS & Steam",
+        website: "",
 
         toolTags: ["Unreal", "Blueprints", "C++", "Gameplay Ability System", "Perforce", "Excel",],
         skillTags: [ "Prototyping", "Gameplay Scripting", "VFX", "UMG", "Progression", "Economy", "Monetization",],
@@ -170,6 +172,7 @@ export const projects = [
         studio: "Big Huge Games",
         genre: "Card / Strategy (PvP)",
         platforms: "Android, iOS & Steam",
+        website: "https://bighugegames.com/arcane-showdown/",
 
         toolTags: ["Unity", "C#", "Git", "Excel", "Tableau", "JIRA"],
         skillTags: [ "Prototyping", "Combat Design", "Card Design", "Multiplayer", "Progression", "Economy", "Monetization", "Live Ops",],
@@ -225,6 +228,7 @@ export const projects = [
         studio: "Big Huge Games",
         genre: "Strategy Base Builder (PvP)",
         platforms: "Android, iOS & Steam",
+        website: "https://bighugegames.com/dominations/",
 
         toolTags: ["Unity", "C#", "Git", "Excel", "Tablau", "JIRA"],
         skillTags: ["Live Ops", "Balance", "Multiplayer", "Progression", "Events",],
@@ -269,6 +273,7 @@ export const projects = [
         studio: "Zenimax Online Studios",
         genre: "MMORPG",
         platforms: "PC, Max, Xbox, & PlayStation",
+        website: "https://www.elderscrollsonline.com/en-us/home",
 
         toolTags: ["Custom Engine", "Lua", "Ruby", "Confluence", "JIRA", "HTML"],
         skillTags: ["QA", "Automation", "Live Ops",],
@@ -322,7 +327,8 @@ export const projects = [
         studio: "Alchemy Learning",
         genre: "Educational VR Experience",
         platforms: "PC",
-     
+        website: "https://alchemylearning.com/",
+
         toolTags: ["Unity", "C#", "Oculus VR", "Blender", "Photoshop"],
         skillTags: ["VR", "Education", "Level Design", "Cameras"],
 
@@ -365,6 +371,7 @@ export const projects = [
         studio: "Alchemy Learning",
         genre: "Workforce VR Experience",
         platforms: "Android, iOS, GearVR",
+        website: "https://alchemylearning.com/",
 
         toolTags: ["Unity", "C#", "Oculus VR", "GearVR", "Blender", "Photoshop", "CMUSphinx", "IBMWatson"],
         skillTags: ["VR", "Education", "SQL", "Level Design", "Cameras", "Analytics"],
