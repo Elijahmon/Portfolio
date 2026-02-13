@@ -361,7 +361,7 @@
 .project_release
 {
     align-self: center;
-    font-size: 72px;
+    font-size: 68px;
     font-weight: 700;
 
     background: linear-gradient(180deg, var(--Wisteria-Blue, #A3A6E1) 49.52%, var(--Medium-Slate-Blue, #6F73D2) 100%);

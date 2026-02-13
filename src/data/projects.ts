@@ -47,6 +47,16 @@ import AS_LevelupHighlight from "../assets/images/AS_leveluphighlight.jpg"
 import AS_MenuHighlight from "../assets/images/AS_menuhighlight.jpg"
 import AS_CollectHighlgiht from "../assets/images/AS_collect.jpg"
 
+import DOM_EventHighlight from "../assets/images/DOM_eventhighlight.webp"
+import DOM_EventHighlight2 from "../assets/images/DOM_eventhighlight2.webp"
+import DOM_EventHighlight3 from "../assets/images/DOM_eventhighlight3.webp"
+import DOM_EventHighlight4 from "../assets/images/DOM_eventlist.jpg"
+import DOM_TroopHighlight from "../assets/images/DOM_troop.webp"
+import DOM_TroopHighlight1 from "../assets/images/DOM_troop1.jpg"
+import DOM_TroopHighlight2 from "../assets/images/DOM_troop2.png"
+import DOM_TroopHighlight3 from "../assets/images/DOM_troop3.png"
+import DOM_VictoryHighlight from "../assets/images/DOM_victoryhighlight.jpg"
+
 export const projects = [
     {
         id: "mythwalker",
@@ -225,18 +235,18 @@ export const projects = [
                 toolTags: ["Unity", "C#", "Excel", "Tablau"],
                 skillTags: ["Prototyping", "Multiplayer", "Combat Design", "Balance"],
                 
-                description: '',
-                highlightImages: [AS_SideHighlight],
-                subImages: [AS_DuelHighlight, AS_DeckHighlight, AS_InfoHighlight, ],
+                description: 'One of the main tasks I had as a designer on DomiNations was maintaining balance as we introduced new ages and event troops into the game. I worked in excel to properly scale troops as new ages were introduced with upgrades and to create the stats for event troops that would fight alongside them.\n\nOften this required balancing between monetization goals and player perception, ensuring that while event troops were worthwhile to buy and gave players an advantage they could not wholly overcome a more strategically laid out base through sheer power. Particularly as the game matured and the age count grew into the double digits careful attention had to be paid to how they scaled throughout the ages and power levels of the games progression.',
+                highlightImages: [DOM_TroopHighlight1],
+                subImages: [DOM_TroopHighlight2, DOM_TroopHighlight3, DOM_TroopHighlight],
             },
             {
                 title: "Events and Sales",
                 toolTags: ["Unity", "C#", "Photoshop"],
                 skillTags: ["Live Ops", "Events", "Monetization"],
                 
-                description: '',
-                highlightImages: [AS_SideHighlight],
-                subImages: [AS_DuelHighlight, AS_DeckHighlight, AS_InfoHighlight, ],
+                description: 'I had a crash course in Analytics and Live Ops while working as a Designer on DomiNations. I was tasked with creating and balancing sale items and prices alongside config and feature events and everything was evaluated through a data driven lens. I had to learn the patterns and work with analytics to find success or propose avenues we could explore that would drive player retention and monetization for every release.',
+                highlightImages: [DOM_EventHighlight3],
+                subImages: [DOM_EventHighlight4, DOM_EventHighlight, , DOM_EventHighlight2],
             },
         ],
 
@@ -265,22 +275,31 @@ export const projects = [
 
         highlights: [
             {
+                title: "Dungeon & Trial Team",
+                toolTags: ["Custom Engine", "Lua", "Confluence", "JIRA"],
+                skillTags: ["QA", "Combat Balance", "Content", "Scripting", "Tools"],
+                
+                description: 'While working in QA I took a particular interest in combat for the game, and in particular built several "add-ons" in lua that I used myself and gave to others that tracked stats like damage, sources, modifiers, and as a result, often highlighted underlying issues that were easy to miss (and that players would eventually discover making their own add-ons for live).\n\nAs a result I was invited to join the Dungeon & Trial team, a specialized group focused on playtesting the highest level existing and future content. The team ran content during overtime to provide feedback to the design team and help them balance the difficulty in relation to the most competitive end game players, content such as Hel-Ra citadel, The Atherium Archive, and early versions of Craglorn.',
+                highlightImages: [],
+                subImages: [],
+            },
+            {
                 title: "Live QA",
                 toolTags: ["Custom Engine", "Lua", "Confluence", "JIRA"],
-                skillTags: ["Prototyping", "Multiplayer", "Combat Design", "Balance"],
+                skillTags: ["QA", "Live Ops", "Events", "Scripting"],
                 
-                description: '',
-                highlightImages: [AS_SideHighlight],
-                subImages: [AS_DuelHighlight, AS_DeckHighlight, AS_InfoHighlight, ],
+                description: 'While at Zenimax I was a part of the QA team and found my specialization in Live QA. I scoured confluence to familiarize myself with the custom engines scripting and configs enabling me to follow a user report or live issue and reproduce it easily by understanding and investigating possible causes. I had a breadth of familiarity with the game and followed the forums and other public user discussions to identify emergent issues before they became widespread and regressed them across multiple environments to ensure they were fixed for the next release.',
+                highlightImages: [],
+                subImages: [],
             },
             {
                 title: "QA Automation",
                 toolTags: ["Ruby", "HTML"],
-                skillTags: ["Live Ops", "Events", "Monetization"],
+                skillTags: ["QA", "Automation", "Web"],
                 
-                description: '',
-                highlightImages: [AS_SideHighlight],
-                subImages: [AS_DuelHighlight, AS_DeckHighlight, AS_InfoHighlight, ],
+                description: 'After working at Alchemy Learning I returned to Zenimax on the QA Automation team, working specifically with the web and payment platforms to create automated test cases around them. I worked primarily with Ruby on Rails to create scripts that would cover purchase flows, special cases, and report any issues in its results automatically.',
+                highlightImages: [],
+                subImages: [],
             },
         ],
 
@@ -296,7 +315,7 @@ export const projects = [
         name: "Amazon Experience",
         role: "Game Developer",
         duration: "8 Months",
-
+        summary: 'The Amazon Experience is a Virtual Reality educational game that tasks students with taking photos of wildlife while on a river in the Amazon. Players are given oppourtunities along their journey to take photos that are then scored to unlock facts about the animals.',
 
         releaseMonth: "July",
         releaseYear: "2014",
@@ -304,17 +323,42 @@ export const projects = [
         genre: "Educational VR Experience",
         platforms: "PC",
      
+        toolTags: ["Unity", "C#", "Oculus VR", "Blender", "Photoshop"],
+        skillTags: ["VR", "Education", "Level Design", "Cameras"],
+
+        highlights: [
+            {
+                title: "Scripted Boat Ride",
+                toolTags: ["Unity", "C#", "Oculus VR"],
+                skillTags: ["VR", "Level Design"],
+                
+                description: 'For the Amazon Experience I handled all of the scripted sequences and logic for integrating with Oculus VR and Cameras within Unity. I set up a "track" for the players boat that automatically moved them along the river, along the way they would trigger animals to appear as you passed them including 3D audio callouts. The ending sequence which took the player on a careening trip down a waterfall before splashing down home and recieving their scores and facts about the animals they had "discovered".',
+                highlightImages: [],
+                subImages: [],
+            },
+            {
+                title: "Camera Renders & Scoring",
+                toolTags: ["Unity", "C#", "Oculus VR"],
+                skillTags: ["VR", "Cameras"],
+                
+                description: 'An important part of the Amazon experience was using virtual reality as the “camera” the player uses to take pictures. Using ray casts and a little bit of math positions, distance, and visibility was relatively easy to figure out and a score could be formulated. Using a separate camera that was inactive render textures of the screen were saved locally and kept for the journal at the end of the levels. The UI was built using Unity’s 4.6 UI system using sprites and text elements to fill information based on the animal captured.',
+                highlightImages: [],
+                subImages: [],
+            },
+        ],
         /* assets */
         splashImage: Amazon_Splash,
         splashPosition: "",
         highlightImage: Amazon_Highlights,
+
+        overlayImage: Amazon_Splash,
     },
     {
         id: "workforce", /* :( */
         name: "Workforce Development",
         role: "Game Developer",
         duration: "6 Months",
-
+        summary: 'A Virtual Reality tool with modules for public speaking, interview training, and board room presentation within virtual reality. Players recieve scoring and notes based on their performance calling out things like filler word usage, pacing issues, and improve enounciation and eye contact.',
 
         releaseMonth: "December",
         releaseYear: "2014",
@@ -322,9 +366,35 @@ export const projects = [
         genre: "Workforce VR Experience",
         platforms: "Android, iOS, GearVR",
 
+        toolTags: ["Unity", "C#", "Oculus VR", "GearVR", "Blender", "Photoshop", "CMUSphinx", "IBMWatson"],
+        skillTags: ["VR", "Education", "SQL", "Level Design", "Cameras", "Analytics"],
+
+        highlights: [
+            {
+                title: "Voice Recognition and Eye Contact",
+                toolTags: ["Unity", "C#", "GearVR"],
+                skillTags: ["VR", "CMUSphinx", "IBMWatson"],
+                
+                description: 'One of the important parts of the app was to give feedback on the users speaking style and eye contact so that they would know what to work on. Eye contact was relatively easy to set up and uses ray casting for a specific set of colliers attached to the animated avatars. For voice recognition it was necessary to use some third party tools. In the offline version the app runs using CMUSphinx which had to be loaded and connected before Unity in android studio. In the online version IBM Watson speech to text, text to speech, and tone analyzer are used to get the necessary metrics for feedback. Regular Expressions were used to filter out filler words and to count syllables for pace reporting. With all of this information stored and computed it was saved to and SQLite database and populated in the custom built UI including graphs at the end of the presentation/speech/interview.',
+                highlightImages: [],
+                subImages: [],
+            },
+            {
+                title: "User Content",
+                toolTags: ["Unity", "C#", "GearVR"],
+                skillTags: ["VR", "Analytics", "SQL"],
+                
+                description: 'Since users needed to be able to create their own practice environments and use their own materials we needed a way for them to submit their speech/presentation and load it into the tool. Using a simple email system presentations could be uploaded to our back end and then downloaded when the appropriate module was selected. In addition using text to speech questions could be added for after presentations/speeches/interviews which tracked the same metrics.',
+                highlightImages: [],
+                subImages: [],
+            },
+        ],
+
         /* assets */
         splashImage: Workforce_Splash,
         splashPosition: "",
         highlightImage: Workforce_Highlights,
+
+        overlayImage: Workforce_Splash,
     }
 ];

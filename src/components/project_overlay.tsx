@@ -36,11 +36,11 @@ function Project_Overlay({project, onCloseOverlay})
     return (
         <div className={`project_overlay_panel ${visible ? 'show' : ''}`} style={{}}>
             <div className={`project_overlay_content ${visible ? 'show' : ''}`} ref={overlayRef} style={{}}>
-                <div style={{display: 'inline-flex', flexDirection: 'row'}}>
+                <div style={{display: 'inline-flex', flexDirection: 'row', gap: '32px', paddingBottom: '32px'}}>
                     <div style={{maxWidth: '70%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
-                        <div style={{ display: 'inline-flex', flexDirection: 'row', gap: '35px'}}>
-                            <div className="project_name" style={{fontSize: '96px', padding: '0'}}>
-                            {name}
+                        <div style={{ display: 'inline-flex', flexDirection: 'row', gap: '32px', justifyItems: 'stretch'}}>
+                            <div className="project_name" style={{fontSize: '68px', padding: '0'}}>
+                                {name}
                             </div>
                             <div style={{width: '10px', height: '85%', alignSelf: 'center', background: 'linear-gradient(180deg, var(--My-Gold, #FFC933) 60%, #B88C14 100%)', borderRadius: 5}} />
                             <div className="project_release">
@@ -62,7 +62,7 @@ function Project_Overlay({project, onCloseOverlay})
                         </div>
                     
                     </div>
-                    <img src={overlayImage} style={{maxWidth: '30%', maxHeight: '450px'}} />
+                    <img src={overlayImage} style={{display:'flex', flex: 'stretch', margin: '5px', justifySelf: 'flex-end', maxWidth: '30%', height: 'auto'}} />
                 </div>
                 <div>
                     <div className="project_detail_text" style={{display: 'block', width: '100%', fontSize: '48px', textAlign: 'center', padding: '15px 0 15px 0'}}>
