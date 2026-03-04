@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./styles/resume.css"
 import DownloadIcon from "../assets/icons/DownloadIcon.svg" 
+import resumeFile from "../assets/docs/ElijahF_Resume.pdf"
 
 function Resume()
 {
@@ -21,7 +22,7 @@ function Resume()
   
             <div className="resume_panel">
                 <div style={{display: 'inline-flex', flexDirection: 'column', width: '100%', alignItems: 'center', marginBottom: '20px'}}>
-                    <a href="../assets/docs/ElijahF_Resume.pdf" download className="download_button" style={{justifyContent: 'flex-end', marginBottom: '12px'}}>
+                    <a href={resumeFile} download className="download_button" style={{justifyContent: 'flex-end', marginBottom: '12px'}}>
                         Download <img src={DownloadIcon} style={{alignSelf: 'end', width:'43px', height:'72px'}}  />
                     </a>
                     <div className="resume_p" style={{margin: '5px 0 5px 0'}}>Or</div>
@@ -106,19 +107,19 @@ function Resume()
                             Lead design for feature and systems teams from prototype to release for MythWalker (2024) a Free to Play, Geolocation based, MMORPG. 
                         </li>
                         <li>
-                            Ownership of all Progression, Economy, and Monetization systems during development and as live design lead. Usage of Tableau analytics and Excel to create documentation, scripted and automated tools, and identify design opportunities and improvements to include in development and updates.
-                        </li>
-                        <li>
                             Lead design of key retention and monetization systems such as Character Progression, Crafting, Quests, Storefront/Sales, and Rewards. Establish goals and player profiles, create documentation and tools through development, as well as create and balance content such as characters, items, and quests.
                         </li>
                         <li>
-                            Lead design of geolocation map and encounter design, utilizing MapBox and OpenStreetMaps to generate encounters and POIs around the world based on real world locations, regions, weather, and time of day. 
+                            Ownership of all Progression, Economy, and Monetization systems throughout development and live service. 
                         </li>
                         <li>
-                            Lead design of unique Geolocation Features for Mythwalker, including Energy based navigation, teleporting and the patented Location Tethering system.
+                            Utilize MapBox and OpenStreetMaps  to lead geolocation map and encounter design. Developing systems to dynamically generate encounters around the world based on regionality, weather, and time of day. 
                         </li>
                         <li>
-                            Assist combat design by creating balance tools, making regular balance updates, and prototyping new functionality for abilities and systems.
+                            Lead design of unique Geolocation Features for Mythwalker, including Energy based navigation, teleporting and work with patented technology to develop the Location Tethering system. 
+                        </li>
+                        <li>
+                            Work with analytics in Tableau to compile reports to create roadmap and updates to make regular balance updates, as well as prototyping new functionality for abilities and systems.
                         </li>
                     </div>
                     <div className="resume_h2" style={{padding: '5px 0'}}>Game Designer, Big Huge Games: 2017-2020</div>

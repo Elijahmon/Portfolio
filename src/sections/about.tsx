@@ -23,7 +23,7 @@ function About()
                             In my career I have similarly had a broad experience in development. I created tools focused on testing and balancing combat in Elder Scrolls Online, created troops and ran live service events for DomiNations, prototyped much of the gameplay, progression, and monetization systems in Arcane Showdown, and lead early development and held ownership of features and systems that spanned the entire world for MythWalker.                        
                         </div>
                         <div className="about_details">
-                           When leading multidisciplinary teams, I focus on fostering clear communication and iterative development. Collaboration and learning are central to my approach Ensuring that every perspective is considered to arrive at the best solution available. I look forward to exploring new opportunities, to work alongside other passionate developers, and building innovative games that players just can’t put down!
+                           When leading multidisciplinary teams, I focus on fostering clear communication and iterative development. Collaboration and learning are central to my approach. Ensuring that every perspective is considered to arrive at the best solution available. I look forward to exploring new opportunities, to work alongside other passionate developers, and building innovative games that players just can’t put down!
                         </div>
                     </div>
                 </div>
