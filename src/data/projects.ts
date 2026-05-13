@@ -79,8 +79,8 @@ export const projects = [
             {
                 title: "Geolocation Design",
                 toolTags: ["Unity", 'C#', "Excel", "OpenStreetMaps"],
-                skillTags: ["Geolocation", "Prototyping", "Progression",  "Monetization", "Social", "Analytics"],
-                
+                skillTags: ["Geolocation", "Prototyping", "Progression", "Monetization", "Social", "Analytics"],
+
                 description: "I am especially proud of the design of several geolocation specific systems that I lead design for on MythWalker. Mapping meaningful gameplay choices across the entire world is essentially a cursed problem, but knowing that we came up with some novel solutions.\n\nOne such solution was the world map spawn system for MythWalker, which mapped the world using S2 Geometry into themed biomes, to spawn dynamic enemy encounters, and map static POIs for gameplay systems and quests. We utilized MapBox to visualize the Mytherran version of earths roads and buildings and OpenStreetMaps to generate encounters and POIs around the world based on real world locations, regions, weather, and time of day.\n\nRealistic representation was only a part of the equation when generating the world, gameplay, particularly resource types and currencies were tied to the encounters and POI gathering minigames spawned from this data. The “real world” is not particularly well balanced when it comes to certain resources, for MythWalker this was especially dependent on the players class (i.e. warriors need large amounts of ore, while spellslingers need large amounts of wood).\n\nThe bulk of this balance was handled on the design side, weighting spawn rate, managing loot rewards from encounters, and finding opportunities within these constraints, like making it possible to hunt enemies during specific weather/time of day combinations (since these also affected spawns). This worked best in conjunction with the subsequent systems for teleporting, portals, and tethering, which allowed players to move separate from their GPS location, create return points around the world, and join each other remotely to hunt and play together anywhere in the world.",
 
                 highlightImages: [MW_GeoHighlightGif],
@@ -88,11 +88,11 @@ export const projects = [
             },
             {
                 title: "Player Progression",
-                toolTags: ["Unity", "C#", "Excel", "Confluence", "Machinations", "Photoshop" ],
+                toolTags: ["Unity", "C#", "Excel", "Confluence", "Machinations", "Photoshop"],
                 skillTags: ["Prototyping", "Progression", "Economy", "Crafting", "Quests", "Social", "UI/UX", "Combat"],
 
                 description: "I also owned and maintained the progression and economy of in game and real money shops, crafting, quest, and rewards across the game. I leveraged my technical background when working with the complex intermingled economic systems of the game to create our system of documentation. Using Excel and Unity Editor scripting I developed scripts and automated tools that were used to simulate and test “on paper” to lay the groundwork for features and updates as well as remove manual steps when updating data. This was also useful to assist with combat by creating balance tools, making regular balance updates, and prototyping new functionality for abilities and systems.",
-                
+
                 highlightImages: [MW_CharHighlight],
                 subImages: [MW_HeroHighlight, MW_CraftHighlight, MW_EnemiesHighlight, MW_MinigameHighlgiht, MW_MultiplayerHighlight],
             },
@@ -138,14 +138,14 @@ export const projects = [
         website: "",
 
         toolTags: ["Unreal", "Blueprints", "C++", "Gameplay Ability System", "Perforce", "Excel",],
-        skillTags: [ "Prototyping", "Gameplay Scripting", "VFX", "UMG", "Progression", "Economy", "Monetization",],
+        skillTags: ["Prototyping", "Gameplay Scripting", "VFX", "UMG", "Progression", "Economy", "Monetization",],
 
         highlights: [
             {
                 title: "Gameplay Ability System",
                 toolTags: ["Unreal", "Gameplay Ability System", 'C++', "Blueprints"],
                 skillTags: ["Prototyping", "Progression", "Combat Balance", "Multiplayer"],
-                
+
                 description: "For this project I primarily worked with Unreal's Gameplay Ability System (GAS). I was charged with designing and implementing networked gameplay for the core real time PvP game loop. I became profecient in end to end implementation of abilities from low level logic to visual effects timing and triggers, working between C++ and Blueprints I created over 25 abilities and balanced their uncapped scaling model that was important for our monetization model.",
 
                 highlightImages: [UNR_GASHighlight],
@@ -155,7 +155,7 @@ export const projects = [
 
         /* assets */
         splashImage: UNR_Splash,
-        splashPosition: "",
+        splashPosition: "50% 0%",
         highlightImage: UNR_Highlights,
 
         overlayImage: UNR_Splash,
@@ -175,33 +175,33 @@ export const projects = [
         website: "https://bighugegames.com/arcane-showdown/",
 
         toolTags: ["Unity", "C#", "Git", "Excel", "Tableau", "JIRA"],
-        skillTags: [ "Prototyping", "Combat Design", "Card Design", "Multiplayer", "Progression", "Economy", "Monetization", "Live Ops",],
+        skillTags: ["Prototyping", "Combat Design", "Card Design", "Multiplayer", "Progression", "Economy", "Monetization", "Live Ops",],
 
         highlights: [
             {
                 title: "Strategy & Card Design",
                 toolTags: ["Unity", "C#", "Photoshop"],
                 skillTags: ["Prototyping", "Multiplayer", "Combat Design", "Balance"],
-                
+
                 description: 'Arcane Showdown was the result of many iterations of rapid prototyping around the central goal of bringing classic RTS gameplay to mobile. During prototpying I filled the role of a technical designer, working from concept to completion on core gameplay features and systems that laid the foundation of the Card design, Base Building, Territory Control, Matchmaking, Rewards, and Progression.\n\nThe core reward structure in the final game was functionally the same as the one I implemented on the first prototype (codenamed "Imperial") and much of the units stats and behaviors remained consistent with the base ruleset I had created during the second (codenamed "Merlin"). I worked "full stack" working on both front and backend logic that drove gameplay and progression during prototype allowing us to share and distibute the game for multiplayer playtests while keeping the team small and agile.',
                 highlightImages: [AS_SideHighlight],
-                subImages: [AS_DuelHighlight, AS_DeckHighlight, AS_InfoHighlight, ],
+                subImages: [AS_DuelHighlight, AS_DeckHighlight, AS_InfoHighlight,],
             },
             {
                 title: "Economy and Monetization",
                 toolTags: ["Unity", "C#", "Excel"],
                 skillTags: ["Economy", "Monetization", "Progression", "Balance", "Social"],
-                
+
                 description: "My largest single contribution to Arcanse Showdown was ownership of the games Economy and Monetization model creating and supporting the resulting reward, event, and social systems at its heart. We leveraged Gacha based collection tied to PvP ranks and participation in Live Ops events to keep players engaged and create a high user LTV that we could leverage content across. \n\nI was responsible for balancing the progression of cards and players to keep the strategic gameplay at the forefront while allowing the metagame of a players collection to influence their overall power. This included creating new content and rewards structures as we created new maps, game modes, and cards. \n\nI created a structure of tools primarily through Google Sheets that interfaced with an inhouse toolset to allow other designers to easily balance future rewards and events easily as well as compare to analytics to make updates and balance fixes that we could deploy quickly and at low risk.",
 
                 highlightImages: [AS_LevelupHighlight],
-                subImages: [AS_VictoryHighlight, AS_MenuHighlight,AS_CollectHighlgiht],
+                subImages: [AS_VictoryHighlight, AS_MenuHighlight, AS_CollectHighlgiht],
             },
             {
                 title: "Live Ops",
                 toolTags: ["Unity", "C#", "Tablau", "Excel"],
                 skillTags: ["Live Ops", "Analytics", "Social", "Economy", "Monetization", "Progression", "Events"],
-                
+
                 description: "I continued to support Arcane Showdown after release focusing on Live Ops and new feature development. Creating new game modes and maps as well as maintaining the economy and balance of the game, particularly by leveraging analnytics. I created events and sales that drew players in boosting our metrics and allowing us to attain featuring for several releases.\n\nA few key updates to the game were the Trials (Events) that added a recurring tournament style mode that we used to preview and test new cards and maps for functionality and popularity before release, and Guilds which allowed players to connect with others to communicate, trade cards, and participate in events and battles with their guildmates",
 
                 highlightImages: [AS_SideHighlight],
@@ -211,7 +211,7 @@ export const projects = [
 
         /* assets */
         splashImage: AS_Splash,
-        splashPosition: "",
+        splashPosition: "50% 50%",
         highlightImage: AS_Highlights,
 
         overlayImage: AS_SideHighlight,
@@ -238,7 +238,7 @@ export const projects = [
                 title: "Troop Balance",
                 toolTags: ["Unity", "C#", "Excel", "Tablau"],
                 skillTags: ["Prototyping", "Multiplayer", "Combat Design", "Balance"],
-                
+
                 description: 'One of the main tasks I had as a designer on DomiNations was maintaining balance as we introduced new ages and event troops into the game. I worked in excel to properly scale troops as new ages were introduced with upgrades and to create the stats for event troops that would fight alongside them.\n\nOften this required balancing between monetization goals and player perception, ensuring that while event troops were worthwhile to buy and gave players an advantage they could not wholly overcome a more strategically laid out base through sheer power. Particularly as the game matured and the age count grew into the double digits careful attention had to be paid to how they scaled throughout the ages and power levels of the games progression.',
                 highlightImages: [DOM_TroopHighlight1],
                 subImages: [DOM_TroopHighlight2, DOM_TroopHighlight3, DOM_TroopHighlight],
@@ -247,7 +247,7 @@ export const projects = [
                 title: "Events and Sales",
                 toolTags: ["Unity", "C#", "Photoshop"],
                 skillTags: ["Live Ops", "Events", "Monetization"],
-                
+
                 description: 'I had a crash course in Analytics and Live Ops while working as a Designer on DomiNations. I was tasked with creating and balancing sale items and prices alongside config and feature events and everything was evaluated through a data driven lens. I had to learn the patterns and work with analytics to find success or propose avenues we could explore that would drive player retention and monetization for every release.',
                 highlightImages: [DOM_EventHighlight3],
                 subImages: [DOM_EventHighlight4, DOM_EventHighlight, , DOM_EventHighlight2],
@@ -256,7 +256,7 @@ export const projects = [
 
         /* assets */
         splashImage: DOM_Splash,
-        splashPosition: "",
+        splashPosition: "50% 50%",
         highlightImage: DOM_Highlights,
 
         overlayImage: DOM_Splash,
@@ -283,7 +283,7 @@ export const projects = [
                 title: "Dungeon & Trial Team",
                 toolTags: ["Custom Engine", "Lua", "Confluence", "JIRA"],
                 skillTags: ["QA", "Combat Balance", "Content", "Scripting", "Tools"],
-                
+
                 description: 'While working in QA I took a particular interest in combat for the game, and in particular built several "add-ons" in lua that I used myself and gave to others that tracked stats like damage, sources, modifiers, and as a result, often highlighted underlying issues that were easy to miss (and that players would eventually discover making their own add-ons for live).\n\nAs a result I was invited to join the Dungeon & Trial team, a specialized group focused on playtesting the highest level existing and future content. The team ran content during overtime to provide feedback to the design team and help them balance the difficulty in relation to the most competitive end game players, content such as Hel-Ra citadel, The Atherium Archive, and early versions of Craglorn.',
                 highlightImages: [],
                 subImages: [],
@@ -292,7 +292,7 @@ export const projects = [
                 title: "Live QA",
                 toolTags: ["Custom Engine", "Lua", "Confluence", "JIRA"],
                 skillTags: ["QA", "Live Ops", "Events", "Scripting"],
-                
+
                 description: 'While at Zenimax I was a part of the QA team and found my specialization in Live QA. I scoured confluence to familiarize myself with the custom engines scripting and configs enabling me to follow a user report or live issue and reproduce it easily by understanding and investigating possible causes. I had a breadth of familiarity with the game and followed the forums and other public user discussions to identify emergent issues before they became widespread and regressed them across multiple environments to ensure they were fixed for the next release.',
                 highlightImages: [],
                 subImages: [],
@@ -301,7 +301,7 @@ export const projects = [
                 title: "QA Automation",
                 toolTags: ["Ruby", "HTML"],
                 skillTags: ["QA", "Automation", "Web"],
-                
+
                 description: 'After working at Alchemy Learning I returned to Zenimax on the QA Automation team, working specifically with the web and payment platforms to create automated test cases around them. I worked primarily with Ruby on Rails to create scripts that would cover purchase flows, special cases, and report any issues in its results automatically.',
                 highlightImages: [],
                 subImages: [],
@@ -310,7 +310,7 @@ export const projects = [
 
         /* assets */
         splashImage: ESO_Splash,
-        splashPosition: "",
+        splashPosition: "50% 50%",
         highlightImage: ESO_Highlights,
 
         overlayImage: ESO_Splash,
@@ -337,7 +337,7 @@ export const projects = [
                 title: "Scripted Boat Ride",
                 toolTags: ["Unity", "C#", "Oculus VR"],
                 skillTags: ["VR", "Level Design"],
-                
+
                 description: 'For the Amazon Experience I handled all of the scripted sequences and logic for integrating with Oculus VR and Cameras within Unity. I set up a "track" for the players boat that automatically moved them along the river, along the way they would trigger animals to appear as you passed them including 3D audio callouts. The ending sequence which took the player on a careening trip down a waterfall before splashing down home and recieving their scores and facts about the animals they had "discovered".',
                 highlightImages: [],
                 subImages: [],
@@ -346,7 +346,7 @@ export const projects = [
                 title: "Camera Renders & Scoring",
                 toolTags: ["Unity", "C#", "Oculus VR"],
                 skillTags: ["VR", "Cameras"],
-                
+
                 description: 'An important part of the Amazon experience was using virtual reality as the “camera” the player uses to take pictures. Using ray casts and a little bit of math positions, distance, and visibility was relatively easy to figure out and a score could be formulated. Using a separate camera that was inactive render textures of the screen were saved locally and kept for the journal at the end of the levels. The UI was built using Unity’s 4.6 UI system using sprites and text elements to fill information based on the animal captured.',
                 highlightImages: [],
                 subImages: [],
@@ -354,7 +354,7 @@ export const projects = [
         ],
         /* assets */
         splashImage: Amazon_Splash,
-        splashPosition: "",
+        splashPosition: "50% 50%",
         highlightImage: Amazon_Highlights,
 
         overlayImage: Amazon_Splash,
@@ -381,7 +381,7 @@ export const projects = [
                 title: "Voice Recognition and Eye Contact",
                 toolTags: ["Unity", "C#", "GearVR"],
                 skillTags: ["VR", "CMUSphinx", "IBMWatson"],
-                
+
                 description: 'One of the important parts of the app was to give feedback on the users speaking style and eye contact so that they would know what to work on. Eye contact was relatively easy to set up and uses ray casting for a specific set of colliers attached to the animated avatars. For voice recognition it was necessary to use some third party tools. In the offline version the app runs using CMUSphinx which had to be loaded and connected before Unity in android studio. In the online version IBM Watson speech to text, text to speech, and tone analyzer are used to get the necessary metrics for feedback. Regular Expressions were used to filter out filler words and to count syllables for pace reporting. With all of this information stored and computed it was saved to and SQLite database and populated in the custom built UI including graphs at the end of the presentation/speech/interview.',
                 highlightImages: [],
                 subImages: [],
@@ -390,7 +390,7 @@ export const projects = [
                 title: "User Content",
                 toolTags: ["Unity", "C#", "GearVR"],
                 skillTags: ["VR", "Analytics", "SQL"],
-                
+
                 description: 'Since users needed to be able to create their own practice environments and use their own materials we needed a way for them to submit their speech/presentation and load it into the tool. Using a simple email system presentations could be uploaded to our back end and then downloaded when the appropriate module was selected. In addition using text to speech questions could be added for after presentations/speeches/interviews which tracked the same metrics.',
                 highlightImages: [],
                 subImages: [],
@@ -399,7 +399,7 @@ export const projects = [
 
         /* assets */
         splashImage: Workforce_Splash,
-        splashPosition: "",
+        splashPosition: "80% 50%",
         highlightImage: Workforce_Highlights,
 
         overlayImage: Workforce_Splash,

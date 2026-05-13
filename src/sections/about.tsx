@@ -2,17 +2,16 @@ import "./styles/about.css"
 
 import AboutImage from "../assets/images/head1.png"
 
-function About()
-{
+function About() {
     return (
-        <div id="About" style={{alignSelf: 'stretch', height: 'max-content', position: 'relative', borderRadius: 30}}>
-            <div  className='section_header'>
+        <div id="About" style={{ alignSelf: 'stretch', height: 'max-content', position: 'relative', borderRadius: 30 }}>
+            <div className='section_header'>
                 About
             </div>
             <div className="about_panel">
-                <div className="details" style={{display: 'inline-flex'}}>
-                    <img src={AboutImage} style={{display: 'flex', margin: '0 32px 0 15px', height: '300px', width:'auto'}}/>
-                    <div style={{display: 'flex', flexDirection: "column", gap: 10}}>
+                <div className="details" style={{ display: 'inline-flex' }}>
+                    <img className="about_img" src={AboutImage} />
+                    <div style={{ display: 'flex', flexDirection: "column", gap: 10 }}>
                         <div className="about_header">
                             Hi, my name is Elijah Fernandez, I am a Generalist Game Designer with over 10 years of experience building games from simple prototypes to live service experiences enjoyed by millions of players worldwide.
                         </div>
@@ -20,14 +19,14 @@ function About()
                             I have a hard time confining myself within specializations or specific roles within game development. I really just love the process! Creating a lasting empathetic experience through iteration and feedback with a passionate team has no equal.
                         </div>
                         <div className="about_details">
-                            In my career I have similarly had a broad experience in development. I created tools focused on testing and balancing combat in Elder Scrolls Online, created troops and ran live service events for DomiNations, prototyped much of the gameplay, progression, and monetization systems in Arcane Showdown, and lead early development and held ownership of features and systems that spanned the entire world for MythWalker.                        
+                            In my career I have similarly had a broad experience in development. I created tools focused on testing and balancing combat in Elder Scrolls Online, created troops and ran live service events for DomiNations, prototyped much of the gameplay, progression, and monetization systems in Arcane Showdown, and lead early development and held ownership of features and systems that spanned the entire world for MythWalker.
                         </div>
                         <div className="about_details">
-                           When leading multidisciplinary teams, I focus on fostering clear communication and iterative development. Collaboration and learning are central to my approach. Ensuring that every perspective is considered to arrive at the best solution available. I look forward to exploring new opportunities, to work alongside other passionate developers, and building innovative games that players just can’t put down!
+                            When leading multidisciplinary teams, I focus on fostering clear communication and iterative development. Collaboration and learning are central to my approach. Ensuring that every perspective is considered to arrive at the best solution available. I look forward to exploring new opportunities, to work alongside other passionate developers, and building innovative games that players just can’t put down!
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
     );
 }
