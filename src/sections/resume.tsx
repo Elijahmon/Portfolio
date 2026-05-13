@@ -21,12 +21,10 @@ function Resume()
             </div>
   
             <div className="resume_panel">
-                <div style={{display: 'inline-flex', flexDirection: 'column', width: '100%', alignItems: 'center', marginBottom: '20px'}}>
+                <div style={{display: 'inline-flex', flexDirection: 'column', width: '100%', alignItems: 'center'}}>
                     <a href={resumeFile} download className="download_button" style={{justifyContent: 'flex-end', marginBottom: '12px'}}>
                         Download <img src={DownloadIcon} style={{alignSelf: 'end', width:'43px', height:'72px'}}  />
-                    </a>
-                    <div className="resume_p" style={{margin: '5px 0 5px 0'}}>Or</div>
-                    <a onClick={toggleExpand} className="expand_link">Read Online</a>      
+                    </a>    
                 </div>
                 {expanded && (
                     <div>
