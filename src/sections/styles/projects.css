@@ -177,6 +177,24 @@
 
 }
 
+.project_highlight_frame
+{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    overflow: scroll;
+    flex-direction: row; 
+    gap: clamp(15px, 5vw, 30px);
+}
+
+.project_highlight_tagsframe
+{
+    display: inline-flex; 
+    flex-direction: column; 
+    gap: clamp(10px, 2vw, 15px); 
+    margin: 20px 0px 30px;
+}
+
 .project_info_detail {
     font-size: clamp(22px, 4vw, 30px);
     font-weight: 700;
@@ -507,10 +525,10 @@
     margin: 15px;
     text-overflow: wrap;
     white-space: pre-line;
-
+    flex-wrap: wrap;
     height: max-content;
 
-    font-size: 20px;
+    font-size: clamp(12px, 3vw, 20px);
     font-weight: 500;
 
     background: linear-gradient(180deg, var(--Lavender-Mist, #F8F0FB) 60%, var(--Lavender, #E0E1F5) 100%);

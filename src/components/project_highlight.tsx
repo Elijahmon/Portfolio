@@ -8,11 +8,11 @@ function Project_Highlight({highlight})
     const {title, toolTags, skillTags, highlightImages, subImages, description} = highlight;
 
     return (
-        <div style={{display: 'inline-flex', alignContent: 'flex-start', flexDirection: 'column', height: 'max-content'}}>
+        <div >
             <div className="project_highlight_header">
                 {title}
             </div>
-            <div style={{ display: 'inline-flex', flexDirection: 'column', gap: '15px', margin: '20px 0 30px 0'}}>
+            <div className="project_highlight_tagsframe">
                 {toolTags.length > 0 && (
                             <Project_Tag_Grid type="project_tool_tag" tags={toolTags} />
                         )}
@@ -20,7 +20,7 @@ function Project_Highlight({highlight})
                             <Project_Tag_Grid type="project_skill_tag" tags={skillTags} />
                         )}
             </div>
-            <div style={{display: 'inline-flex', flexDirection: 'row', gap: '30px'}}>
+            <div className="project_highlight_frame">
                 {highlightImages.length > 0 && (
                     
                         highlightImages.map((image, index) => 

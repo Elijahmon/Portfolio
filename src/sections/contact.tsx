@@ -19,7 +19,7 @@ function Contact()
                 <a href="mailto:elijahmon@live.com" className="contact_button"><img className='contact_icon' src={MailIcon} style={{}} /></a>
                 <a href="https://www.linkedin.com/in/elijah-fernandez-663ab9b6/" className="contact_button"><img className='contact_icon' src={LinkedInIcon} style={{}} /></a>
                 <a href="https://github.com/elijahmon" className="contact_button"><img className='contact_icon' src={GitIcon} style={{}} /></a>
-                <a href="mailto:info@pandamoniumstudios.org" className="contact_button"><img className='contact_icon' src={PandaIcon} style={{width: '120px', height: '88px'}} /><img src={PandaText} style={{margin: '0 0 5px 0'}}/></a>
+                <a href="mailto:info@pandamoniumstudios.org" className="contact_button"><img className='contact_icon' src={PandaIcon} /><img className='text_icon' src={PandaText}/></a>
             </div>
         </div>
     );
